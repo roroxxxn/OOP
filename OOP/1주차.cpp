@@ -1,7 +1,4 @@
 #include <iostream>
-// test
-// test
-// i have made a change!
 class LetDebug
 {
 public:
@@ -11,6 +8,7 @@ public:
         short s2 = 1;
         int s3 = (short)s1 + s2;
         std::cout << s3 << std::endl;
+        std::cout << "i have made a change!" << std::endl;
     }
 };
 
