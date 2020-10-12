@@ -30,16 +30,18 @@ int main() {
     catch (std::exception& e) {
         std::cout << "Exception : " << e.what();
     }
-}/* (실습 1-1) 분석결과 :
-    - 출력 내용 :
-    Executed in B
-    Destructor execution: B
-    Executed in A
-    Destructor execution: A
+}
 
-    try블록에서 throw가 발생하지 않았기 때문에
-    차례로 funcB의 출력문, 객체 b의 destructor 출력문, funcA의 출력문, 객체 a의 destructor 출력문을 출력한다.
-    예외가 발생하지 않았으므로 catch블록은 실행되지 않는다.
+/* (실습 1-1) 분석결과 :
+   - 출력 내용 :
+   Executed in B
+   Destructor execution: B
+   Executed in A
+   Destructor execution: A
+
+   try블록에서 throw가 발생하지 않았기 때문에
+   차례로 funcB의 출력문, 객체 b의 destructor 출력문, funcA의 출력문, 객체 a의 destructor 출력문을 출력한다.
+   예외가 발생하지 않았으므로 catch블록은 실행되지 않는다.
 */
 
 /* (실습 1-2) 분석결과 :    - 출력 내용 :    Destructor execution: B
