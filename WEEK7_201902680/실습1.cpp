@@ -44,6 +44,14 @@ int main() {
    예외가 발생하지 않았으므로 catch블록은 실행되지 않는다.
 */
 
-/* (실습 1-2) 분석결과 :    - 출력 내용 :    Destructor execution: B
-    Destructor execution: A
-    Exception : Exception from funcB!        try블록에서 throw가 발생하였으므로 try블록 내 throw 다음의 문장들은 실행되지 않는다.    따라서 funcB와 funcA의 출력문은 출력되지 않고 두 함수가 종료되면 destructor의 출력문이 차례로 출력된다.    그리고 throw명령에 따라 인자로 "Exception from funcB!" 을 던졌으므로     catch블록 이를 받아 예외처리를 실행한다.*/
+/* (실습 1-2) 분석결과 :
+   - 출력 내용 :
+   Destructor execution: B
+   Destructor execution: A
+   Exception : Exception from funcB!
+
+   try블록에서 throw가 발생하였으므로 try블록 내 throw 다음의 문장들은 실행되지 않는다.
+   따라서 funcB와 funcA의 출력문은 출력되지 않고 두 함수가 종료되면 destructor의 출력문이 차례로 출력된다.
+   그리고 throw명령에 따라 인자로 "Exception from funcB!" 을 던졌으므로
+   catch블록 이를 받아 예외처리를 실행한다.
+*/
